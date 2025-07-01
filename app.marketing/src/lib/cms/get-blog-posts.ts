@@ -32,8 +32,12 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
     return response.blogPosts;
   } catch (error) {
     if (error instanceof Error) {
-      throw new Error(`Failed to fetch blog posts: ${error.message}`);
+      console.error("Failed to fetch blog posts:", error.message);
+      //throw new Error(`Failed to fetch blog posts: ${error.message}`);
+      return [];
     }
-    throw new Error('Failed to fetch blog posts: Unknown error occurred');
+    console.error("Failed to fetch blog posts");
+    return [];
+    //throw new Error('Failed to fetch blog posts: Unknown error occurred');
   }
 }
