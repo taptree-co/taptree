@@ -25,7 +25,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remark-gfm": "^4.0.0",
-    "sass": "^1.85.0"
+    "sass": "^1.85.0",
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
     "@graphcms/rich-text-types": "^0.5.1",
