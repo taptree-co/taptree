@@ -43,54 +43,63 @@ const baseSitemap = [
   },
 ];
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const blogSitemap = await generateBlogSitemap(baseUrl);
-  const learnSitemap = await generateLearnSitemap(baseUrl);
+  const [blogSitemap, learnSitemap] = await Promise.allSettled([
+    generateBlogSitemap(baseUrl),
+    generateLearnSitemap(baseUrl),
+  ]);
 
   return [
     ...baseSitemap,
-    ...blogSitemap,
-    ...learnSitemap,
+    ...(blogSitemap.status === 'fulfilled' ? blogSitemap.value : []),
+    ...(learnSitemap.status === 'fulfilled' ? learnSitemap.value : []),
   ] as MetadataRoute.Sitemap;
 }
 
 const generateBlogSitemap = async (baseUrl: string) => {
-  const blogPosts = await getBlogPosts();
-
-  const blogSitemap = blogPosts.map((post) => ({
-    url: `${baseUrl}/i/blog/${post.slug}`,
-    lastModified: new Date(post.displayedPublishedAt),
-    changeFrequency: 'monthly',
-    priority: 0.5,
-  }));
-
-  return [
-    {
-      url: `${baseUrl}/i/blog`,
-      lastModified: new Date(),
+  try {
+    const blogPosts = await getBlogPosts();
+    const blogSitemap = blogPosts.map((post) => ({
+      url: `${baseUrl}/i/blog/${post.slug}`,
+      lastModified: new Date(post.displayedPublishedAt),
       changeFrequency: 'monthly',
       priority: 0.5,
-    },
-    ...blogSitemap,
-  ];
+    }));
+
+    return [
+      {
+        url: `${baseUrl}/i/blog`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.5,
+      },
+      ...blogSitemap,
+    ];
+  } catch (error) {
+    console.error("Skipping blog sitemap generation:", error);
+    return [];
+  }
 };
-
 const generateLearnSitemap = async (baseUrl: string) => {
-  const posts = await getLearnPosts();
-
-  const postsSitemap = posts.map((post) => ({
-    url: `${baseUrl}/i/learn/${post.slug}`,
-    lastModified: new Date(post.publishDate),
-    changeFrequency: 'monthly',
-    priority: 0.5,
-  }));
-
-  return [
-    {
-      url: `${baseUrl}/i/learn`,
-      lastModified: new Date(),
+  try {
+    const posts = await getLearnPosts();
+    const postsSitemap = posts.map((post) => ({
+      url: `${baseUrl}/i/learn/${post.slug}`,
+      lastModified: new Date(post.publishDate),
       changeFrequency: 'monthly',
       priority: 0.5,
-    },
-    ...postsSitemap,
-  ];
+    }));
+
+    return [
+      {
+        url: `${baseUrl}/i/learn`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.5,
+      },
+      ...postsSitemap,
+    ];
+  } catch (error) {
+    console.error("Skipping learn sitemap generation:", error);
+    return [];
+  }
 };
