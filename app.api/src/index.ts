@@ -118,6 +118,8 @@ const start = async () => {
   }
 };
 
-start();
+if (process.env.Vercel !== '1') {
+  start();
+}
 
 export default fastify;
