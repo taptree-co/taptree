@@ -1,8 +1,8 @@
 import { editForms } from '@/lib/blocks/edit';
 import { captureException } from '@sentry/nextjs';
-import { Blocks } from '@trylinky/blocks';
-import { InternalApi, internalApiFetcher } from '@trylinky/common';
-import { toast } from '@trylinky/ui';
+import { Blocks } from '@taptree-co/blocks';
+import { InternalApi, internalApiFetcher } from '@taptree-co/common';
+import { toast } from '@taptree-co/ui';
 import { useRouter } from 'next/navigation';
 import useSWR from 'swr';
 

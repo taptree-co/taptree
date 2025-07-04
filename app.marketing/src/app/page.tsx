@@ -20,8 +20,8 @@ import styles from '@/components/landing-page/styles.module.scss';
 import { Testimonials } from '@/components/landing-page/testimonials';
 import { MarketingContainer } from '@/components/marketing-container';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-import { LoginWidget } from '@trylinky/common';
-import { Button, cn, TextReveal } from '@trylinky/ui';
+import { LoginWidget } from '@taptree-co/common';
+import { Button, cn, TextReveal } from '@taptree-co/ui';
 // import { motion, useTransform, useScroll } from 'framer-motion'; // Moved
 import Image from 'next/image';
 import Link from 'next/link';

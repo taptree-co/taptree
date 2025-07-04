@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@trylinky/ui';
+import { Button } from '@taptree-co/ui';
 
 const TikTokMark = () => {
   return (

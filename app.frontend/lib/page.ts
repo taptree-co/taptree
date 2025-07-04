@@ -1,6 +1,6 @@
 import prisma from './prisma';
 import { getSession } from '@/app/lib/auth';
-import { headerBlockDefaults } from '@trylinky/blocks';
+import { headerBlockDefaults } from '@taptree-co/blocks';
 import { track } from '@vercel/analytics/server';
 import { randomUUID } from 'crypto';
 import { headers } from 'next/headers';

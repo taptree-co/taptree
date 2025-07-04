@@ -10,7 +10,7 @@ import { getBlogPosts } from '@/lib/cms/get-blog-posts';
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import { ElementNode, RichTextContent } from '@graphcms/rich-text-types';
 import slugify from '@sindresorhus/slugify';
-import { Button } from '@trylinky/ui';
+import { Button } from '@taptree-co/ui';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';

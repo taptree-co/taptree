@@ -3,8 +3,8 @@
 import { hideOnboardingTour } from '@/app/lib/auth-actions';
 import { StepType, TourProvider, useTour } from '@reactour/tour';
 import { captureException } from '@sentry/nextjs';
-import { fetcher } from '@trylinky/common';
-import { SidebarProvider, Button } from '@trylinky/ui';
+import { fetcher } from '@taptree-co/common';
+import { SidebarProvider, Button } from '@taptree-co/ui';
 import { ReactNode } from 'react';
 import { SWRConfig, SWRConfiguration } from 'swr';
 

@@ -1,4 +1,4 @@
-import { PrismaClient } from '@trylinky/prisma';
+import { PrismaClient } from '@taptree-co/prisma';
 
 const prismaClientSingleton = () => {
   return new PrismaClient().$extends({

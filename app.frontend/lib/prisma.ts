@@ -1,6 +1,6 @@
 import { withAccelerate } from '@prisma/extension-accelerate';
 import { withOptimize } from '@prisma/extension-optimize';
-import { PrismaClient } from '@trylinky/prisma';
+import { PrismaClient } from '@taptree-co/prisma';
 import 'server-only';
 
 const prismaClientSingleton = () => {

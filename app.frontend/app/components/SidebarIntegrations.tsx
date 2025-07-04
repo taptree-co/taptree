@@ -3,8 +3,8 @@ import {
   SupportedIntegrations,
 } from '@/app/components/BlockIntegrationUI';
 import { captureException } from '@sentry/nextjs';
-import { InternalApi, internalApiFetcher } from '@trylinky/common';
-import { Integration } from '@trylinky/prisma';
+import { InternalApi, internalApiFetcher } from '@taptree-co/common';
+import { Integration } from '@taptree-co/prisma';
 import {
   SidebarContentHeader,
   SidebarGroup,
@@ -17,7 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
   toast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useState } from 'react';
 import useSWR, { useSWRConfig } from 'swr';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@trylinky/frontend",
+  "name": "@taptree-co/frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,11 +23,11 @@
     "@react-google-maps/api": "^2.20.3",
     "@reactour/tour": "^3.7.0",
     "@sentry/nextjs": "^9.1.0",
-    "@trylinky/blocks": "*",
-    "@trylinky/common": "*",
-    "@trylinky/prisma": "*",
-    "@trylinky/tinybird": "*",
-    "@trylinky/ui": "*",
+    "@taptree-co/blocks": "*",
+    "@taptree-co/common": "*",
+    "@taptree-co/prisma": "*",
+    "@taptree-co/tinybird": "*",
+    "@taptree-co/ui": "*",
     "@vercel/analytics": "^1.5.0",
     "@vercel/functions": "^2.0.0",
     "better-auth": "^1.2.4",

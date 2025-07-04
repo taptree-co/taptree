@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 
 const landingPageQuestions = [
   {

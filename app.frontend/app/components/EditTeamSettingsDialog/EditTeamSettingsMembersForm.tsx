@@ -4,7 +4,7 @@ import { FormField } from '../FormField';
 import { teamInviteSchema } from './shared';
 import { auth } from '@/app/lib/auth';
 import { captureException } from '@sentry/nextjs';
-import { Invitation, User } from '@trylinky/prisma';
+import { Invitation, User } from '@taptree-co/prisma';
 import {
   Avatar,
   AvatarFallback,
@@ -12,7 +12,7 @@ import {
   Button,
   cn,
   useToast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { withZodSchema } from 'formik-validator-zod';
 import { Loader2 } from 'lucide-react';

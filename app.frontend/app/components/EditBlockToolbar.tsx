@@ -4,9 +4,9 @@ import { PageConfig } from '@/app/[domain]/[slug]/grid';
 import { useEditModeContext } from '@/app/contexts/Edit';
 import { PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline';
 import { captureException } from '@sentry/nextjs';
-import { Blocks } from '@trylinky/blocks';
-import { InternalApi, internalApiFetcher } from '@trylinky/common';
-import { useSidebar, useToast } from '@trylinky/ui';
+import { Blocks } from '@taptree-co/blocks';
+import { InternalApi, internalApiFetcher } from '@taptree-co/common';
+import { useSidebar, useToast } from '@taptree-co/ui';
 import { useParams, useRouter } from 'next/navigation';
 import useSWR, { useSWRConfig } from 'swr';
 

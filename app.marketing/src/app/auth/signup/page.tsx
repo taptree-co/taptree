@@ -1,7 +1,7 @@
 'use client';
 
 import { useIsLoggedIn } from '@/hooks/use-is-logged-in';
-import { LoginForm } from '@trylinky/common';
+import { LoginForm } from '@taptree-co/common';
 import Image from 'next/image';
 import { redirect } from 'next/navigation';
 

@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   experimental: {
     manualClientBasePath: true,
   },
-  transpilePackages: ['@trylinky/ui', '@trylinky/common'],
+  transpilePackages: ['@taptree-co/ui', '@taptree-co/common'],
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],

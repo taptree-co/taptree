@@ -1,8 +1,8 @@
 {
-  "name": "@trylinky/linky",
+  "name": "@taptree-co/linky",
   "version": "1.0.0",
   "private": true,
-  "repository": "https://github.com/trylinky/linky.git",
+  "repository": "https://github.com/taptree-co/linky.git",
   "workspaces": [
     "app.api",
     "app.frontend",

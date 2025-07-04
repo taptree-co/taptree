@@ -1,6 +1,6 @@
 import { fetchGithubData } from './utils';
-import { GithubCommitsThisMonthBlockConfig } from '@trylinky/blocks';
-import { cn } from '@trylinky/ui';
+import { GithubCommitsThisMonthBlockConfig } from '@taptree-co/blocks';
+import { cn } from '@taptree-co/ui';
 import Link from 'next/link';
 import { SVGProps } from 'react';
 

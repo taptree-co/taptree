@@ -1,8 +1,8 @@
 import { BlockProps } from '../ui';
 import { TikTokLatestPostServerUI } from './ui-server';
 import { CoreBlock } from '@/components/CoreBlock';
-import { TikTokLatestPostBlockConfig } from '@trylinky/blocks';
-import { Skeleton } from '@trylinky/ui';
+import { TikTokLatestPostBlockConfig } from '@taptree-co/blocks';
+import { Skeleton } from '@taptree-co/ui';
 import { FunctionComponent, Suspense } from 'react';
 
 export const TikTokLatestPost: FunctionComponent<

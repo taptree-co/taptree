@@ -11,17 +11,17 @@ import * as React from 'react';
 
 const socialLinks: SocialLink[] = [
   {
-    href: 'https://x.com/trylinky',
+    href: 'https://x.com/taptree-co',
     icon: 'https://cdn.lin.ky/email-assets/icons/x.png',
     alt: 'Twitter',
   },
   {
-    href: 'https://instagram.com/trylinky',
+    href: 'https://instagram.com/taptree-co',
     icon: 'https://cdn.lin.ky/email-assets/icons/instagram.png',
     alt: 'Instagram',
   },
   {
-    href: 'https://linkedin.com/company/trylinky',
+    href: 'https://linkedin.com/company/taptree-co',
     icon: 'https://cdn.lin.ky/email-assets/icons/linkedin.png',
     alt: 'LinkedIn',
   },

@@ -1,8 +1,8 @@
 import './globals.css';
 import MarketingFooter from '@/components/marketing-footer';
 import MarketingNavigation from '@/components/marketing-navigation';
-import { LoginWidget } from '@trylinky/common';
-import { Button } from '@trylinky/ui';
+import { LoginWidget } from '@taptree-co/common';
+import { Button } from '@taptree-co/ui';
 import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import localFont from 'next/font/local';
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@trylinky',
-    creator: '@trylinky',
+    site: '@taptree-co',
+    creator: '@taptree-co',
     images: 'https://lin.ky/assets/og.png',
   },
 };

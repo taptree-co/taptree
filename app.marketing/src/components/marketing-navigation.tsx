@@ -18,7 +18,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import Link from 'next/link';
 import { ReactNode, useState } from 'react';
 
@@ -200,13 +200,13 @@ export default function MarketingNavigation({ children }: Props) {
                     Learn
                   </Link>
                   <Link
-                    href="https://x.com/trylinky"
+                    href="https://x.com/taptree-co"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Twitter / X
                   </Link>
                   <Link
-                    href="https://github.com/trylinky/linky"
+                    href="https://github.com/taptree-co/linky"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     View Source on GitHub

@@ -13,7 +13,7 @@ services:
   - type: web
     name: glow-api
     runtime: node
-    repo: https://github.com/trylinky/linky
+    repo: https://github.com/taptree-co/linky
     plan: starter
     envVars:
       - key: INSTAGRAM_CLIENT_SECRET
@@ -109,8 +109,8 @@ services:
 
     region: frankfurt
     buildCommand:
-      npm install && turbo run prisma:migrate prisma:generate --filter=@trylinky/prisma && turbo run build:api
-      --filter=@trylinky/api
+      npm install && turbo run prisma:migrate prisma:generate --filter=@taptree-co/prisma && turbo run build:api
+      --filter=@taptree-co/api
     startCommand: turbo run start:api
     domains:
       - api.lin.ky

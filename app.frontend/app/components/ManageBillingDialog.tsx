@@ -1,12 +1,12 @@
 import { useSession } from '@/app/lib/auth';
-import { PricingTable } from '@trylinky/common';
+import { PricingTable } from '@taptree-co/common';
 import {
   Dialog,
   DialogDescription,
   DialogHeader,
   DialogContent,
   DialogTitle,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { router } from 'better-auth/api';
 import { useRouter } from 'next/navigation';
 

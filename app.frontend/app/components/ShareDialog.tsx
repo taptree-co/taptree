@@ -12,7 +12,7 @@ import {
   TabsList,
   TabsTrigger,
   toast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useState } from 'react';
 import QRCode from 'react-qr-code';
 

@@ -2,7 +2,7 @@
 
 import { EditBlockToolbar } from './EditBlockToolbar';
 import { BlockProps } from '@/lib/blocks/ui';
-import { cn } from '@trylinky/ui';
+import { cn } from '@taptree-co/ui';
 import { AnchorHTMLAttributes, JSXElementConstructor, ReactNode } from 'react';
 
 interface Props extends BlockProps {

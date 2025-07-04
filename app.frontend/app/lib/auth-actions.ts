@@ -2,7 +2,7 @@
 
 import { apiServerFetch } from '@/app/lib/api-server';
 import { captureException } from '@sentry/nextjs';
-import { auth } from '@trylinky/common';
+import { auth } from '@taptree-co/common';
 
 export async function signOut() {
   await auth.signOut();

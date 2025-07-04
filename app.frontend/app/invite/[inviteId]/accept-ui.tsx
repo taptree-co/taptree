@@ -1,8 +1,8 @@
 'use client';
 
 import { acceptInvite } from '@/app/invite/[inviteId]/actions';
-import { auth, LoginForm } from '@trylinky/common';
-import { Button, toast } from '@trylinky/ui';
+import { auth, LoginForm } from '@taptree-co/common';
+import { Button, toast } from '@taptree-co/ui';
 import { useRouter } from 'next/navigation';
 
 export function LoggedInAcceptInviteUI({ inviteId }: { inviteId: string }) {

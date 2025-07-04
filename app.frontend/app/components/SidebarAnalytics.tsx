@@ -1,4 +1,4 @@
-import { InternalApi } from '@trylinky/common';
+import { InternalApi } from '@taptree-co/common';
 import {
   ChartConfig,
   ChartContainer,
@@ -10,7 +10,7 @@ import {
   Card,
   CardContent,
   Skeleton,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';

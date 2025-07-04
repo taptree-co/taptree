@@ -2,7 +2,7 @@
 
 import { PageThemePreview } from '@/app/components/PageThemePreview';
 import { defaultThemeSeeds } from '@/lib/theme';
-import { Label, RadioGroup, RadioGroupItem } from '@trylinky/ui';
+import { Label, RadioGroup, RadioGroupItem } from '@taptree-co/ui';
 
 interface ThemeStepProps {
   currentThemeId: string;

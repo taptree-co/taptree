@@ -26,7 +26,7 @@ import {
   Button,
   cn,
   toast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import useSWR from 'swr';

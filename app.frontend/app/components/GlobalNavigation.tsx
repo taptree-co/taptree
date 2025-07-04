@@ -9,9 +9,9 @@ import {
   ComputerDesktopIcon,
   DevicePhoneMobileIcon,
 } from '@heroicons/react/24/outline';
-import { internalApiFetcher } from '@trylinky/common';
-import { Page } from '@trylinky/prisma';
-import { Button, useSidebar } from '@trylinky/ui';
+import { internalApiFetcher } from '@taptree-co/common';
+import { Page } from '@taptree-co/prisma';
+import { Button, useSidebar } from '@taptree-co/ui';
 import { PlusCircleIcon } from 'lucide-react';
 import Link from 'next/link';
 import useSWR from 'swr';

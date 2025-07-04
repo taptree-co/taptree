@@ -6,14 +6,14 @@ import { ThemeStep } from './ThemeStep';
 import { regexSlug } from '@/lib/slugs';
 import { defaultThemeSeeds } from '@/lib/theme';
 import { captureException } from '@sentry/nextjs';
-import { InternalApi } from '@trylinky/common';
+import { InternalApi } from '@taptree-co/common';
 import {
   Dialog,
   DialogContent,
   DialogTitle,
   Button,
   useToast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { Formik, Form, FormikHelpers } from 'formik';
 import { Loader2 } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';

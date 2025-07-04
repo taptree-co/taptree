@@ -2,7 +2,7 @@ import {
   SidebarContentHeader,
   SidebarGroup,
   SidebarGroupContent,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 
 export function SidebarForms() {
   return (

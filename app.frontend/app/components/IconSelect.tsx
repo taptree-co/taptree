@@ -12,7 +12,7 @@ import {
   AvatarFallback,
   AvatarImage,
   cn,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useEffect, useState } from 'react';
 
 interface IconSelectProps {

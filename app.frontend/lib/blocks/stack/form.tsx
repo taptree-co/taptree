@@ -2,7 +2,7 @@ import { EditFormProps } from '../types';
 import { FormField } from '@/components/FormField';
 import { FormFileUpload } from '@/components/FormFileUpload';
 import { IconSelect } from '@/components/IconSelect';
-import { StackBlockConfig, StackSchema } from '@trylinky/blocks';
+import { StackBlockConfig, StackSchema } from '@taptree-co/blocks';
 import {
   Button,
   Label,
@@ -10,7 +10,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { FieldArray, Form, Formik, FormikHelpers, getIn } from 'formik';
 import { Loader2 } from 'lucide-react';
 
