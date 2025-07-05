@@ -54,7 +54,12 @@ await fastify.register(fastifyMultipart, {
 await fastify.register(cors, {
   origin: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
+  allowedHeaders: [
+    'Content-Type', 
+    'Authorization', 
+    'x-api-key',
+    'Cookie' // this will allow browser to send cookies
+  ],
   exposedHeaders: ['Content-Length'], // Expose specific headers
   credentials: true,
   maxAge: 86400, // Cache preflight response for 24 hours
