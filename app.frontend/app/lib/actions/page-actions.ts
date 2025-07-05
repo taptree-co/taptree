@@ -1,5 +1,14 @@
 import { apiServerFetch } from '@/app/lib/api-server';
 
+async function parseJsonResponse(res: Response, label: string) {
+  if (!res.ok) {
+    const errorText = await res.text();
+    console.error(`${label} failed: ${res.status}\n${errorText}`);
+    throw new Error(`${label} returned status ${res.status}`);
+  }
+  return res.json();
+}
+
 export async function getPageIdBySlugOrDomain(slug: string, domain: string) {
   const res = await apiServerFetch(
     `/pages/internal/slug-or-domain?slug=${slug}&domain=${domain}`,
@@ -11,13 +20,13 @@ export async function getPageIdBySlugOrDomain(slug: string, domain: string) {
     }
   );
 
-  if (res.status !== 200) {
+  if (!res.ok) {
+    const errorText = await res.text();
+    console.error(`getPageIdBySlugOrDomain failed: ${res.status}\n${errorText}`);
     return null;
   }
 
-  const data = await res.json();
-
-  return data;
+  return res.json();
 }
 
 export async function getPageLoadData(pageId: string) {
@@ -28,9 +37,7 @@ export async function getPageLoadData(pageId: string) {
     },
   });
 
-  const data = await res.json();
-
-  return data;
+  return parseJsonResponse(res, 'getPageLoadData');
 }
 
 export async function getPageTheme(pageId: string) {
@@ -38,9 +45,7 @@ export async function getPageTheme(pageId: string) {
     method: 'GET',
   });
 
-  const data = await res.json();
-
-  return data;
+  return parseJsonResponse(res, 'getPageTheme');
 }
 
 export async function getPageLayout(pageId: string) {
@@ -48,9 +53,7 @@ export async function getPageLayout(pageId: string) {
     method: 'GET',
   });
 
-  const data = await res.json();
-
-  return data;
+  return parseJsonResponse(res, 'getPageLayout');
 }
 
 export async function getPageSettings(pageId: string) {
@@ -58,9 +61,7 @@ export async function getPageSettings(pageId: string) {
     method: 'GET',
   });
 
-  const data = await res.json();
-
-  return data;
+  return parseJsonResponse(res, 'getPageSettings');
 }
 
 export async function getPageBlocks(pageId: string) {
@@ -68,7 +69,5 @@ export async function getPageBlocks(pageId: string) {
     method: 'GET',
   });
 
-  const data = await res.json();
-
-  return data;
+  return parseJsonResponse(res, 'getPageBlocks');
 }
