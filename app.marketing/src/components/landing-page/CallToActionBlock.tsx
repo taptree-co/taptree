@@ -23,8 +23,8 @@ import preview21 from '@/assets/landing-page/previews/21.png';
 import preview22 from '@/assets/landing-page/previews/22.png';
 import preview23 from '@/assets/landing-page/previews/23.png';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
-import { LoginWidget } from '@trylinky/common';
-import { Button, cn } from '@trylinky/ui';
+import { LoginWidget } from '@taptree-co/common';
+import { Button, cn } from '@taptree-co/ui';
 import Image from 'next/image';
 
 const columns = [

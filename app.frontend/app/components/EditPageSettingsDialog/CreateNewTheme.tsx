@@ -6,8 +6,8 @@ import { FormFileUpload } from '@/app/components/FormFileUpload';
 import { createTheme, updateTheme } from '@/app/lib/actions/themes';
 import { HSLColor, hslToHex, themeFields } from '@/lib/theme';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
-import { internalApiFetcher } from '@trylinky/common';
-import { Theme } from '@trylinky/prisma';
+import { internalApiFetcher } from '@taptree-co/common';
+import { Theme } from '@taptree-co/prisma';
 import {
   Button,
   Collapsible,
@@ -16,7 +16,7 @@ import {
   Input,
   Label,
   toast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useEffect, useRef, useState } from 'react';
 import { SketchPicker } from 'react-color';
 import useSWR, { mutate } from 'swr';

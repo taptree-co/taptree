@@ -2,8 +2,8 @@
 
 import { getFontFamilyValue, getGoogleFontUrl } from '@/lib/fonts';
 import { defaultThemeSeeds, themeColorToCssValue } from '@/lib/theme';
-import { internalApiFetcher } from '@trylinky/common';
-import { Theme } from '@trylinky/prisma';
+import { internalApiFetcher } from '@taptree-co/common';
+import { Theme } from '@taptree-co/prisma';
 import { useEffect } from 'react';
 import useSWR from 'swr';
 

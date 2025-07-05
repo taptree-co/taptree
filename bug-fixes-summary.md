@@ -44,7 +44,7 @@ useEffect(() => {
 ## Additional Notes
 
 ### Issues Not Fixed (External Dependencies)
-- Multiple TypeScript errors related to missing `@trylinky/prisma` exports - these appear to be missing dependencies rather than bugs in the blocks code
+- Multiple TypeScript errors related to missing `@taptree-co/prisma` exports - these appear to be missing dependencies rather than bugs in the blocks code
 - Missing SVG asset files - these are build/dependency issues rather than code bugs
 - Package manager configuration issues - the project uses Yarn but npm was used for installation
 

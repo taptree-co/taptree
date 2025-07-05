@@ -1,6 +1,6 @@
 'use client';
 
-import { MapBlockConfig, mapThemes } from '@trylinky/blocks';
+import { MapBlockConfig, mapThemes } from '@taptree-co/blocks';
 import mapboxgl, { Map } from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useEffect, useRef } from 'react';

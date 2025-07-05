@@ -2,7 +2,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  transpilePackages: ['@trylinky/ui', '@trylinky/common'],
+  transpilePackages: ['@taptree-co/ui', '@taptree-co/common'],
   rewrites: async () => [
     {
       source: '/',

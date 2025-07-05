@@ -8,7 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 
 const VerifiedBadge = () => {
   return (

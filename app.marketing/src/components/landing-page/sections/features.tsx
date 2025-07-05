@@ -9,7 +9,7 @@ import {
   PaintBrushIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline';
-import { cn } from '@trylinky/ui';
+import { cn } from '@taptree-co/ui';
 import Image, { StaticImageData } from 'next/image';
 
 interface FeatureItemProps {

@@ -1,13 +1,13 @@
 import { DraggableBlockButton } from '@/app/components/DraggableBlockButton';
-import { Blocks } from '@trylinky/blocks';
-import { internalApiFetcher } from '@trylinky/common';
+import { Blocks } from '@taptree-co/blocks';
+import { internalApiFetcher } from '@taptree-co/common';
 import {
   SidebarContentHeader,
   SidebarGroup,
   SidebarGroupContent,
   SidebarInput,
   SidebarMenu,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { SearchIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';

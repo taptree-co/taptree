@@ -3,7 +3,7 @@ import { FormField } from '@/components/FormField';
 import { FormFileUpload } from '@/components/FormFileUpload';
 import { IconSelect } from '@/components/IconSelect';
 import { CaretSortIcon } from '@radix-ui/react-icons';
-import { LinkBarBlockConfig, LinkBarSchema } from '@trylinky/blocks';
+import { LinkBarBlockConfig, LinkBarSchema } from '@taptree-co/blocks';
 import {
   Button,
   Collapsible,
@@ -14,7 +14,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { FieldArray, Form, Formik, FormikHelpers, getIn } from 'formik';
 import { Loader2 } from 'lucide-react';
 
@@ -81,7 +81,7 @@ export function EditForm({
                               name={`links.${index}.link`}
                               id={`links.${index}.link`}
                               error={linkErrors?.link}
-                              placeholder="https://twitter.com/trylinky"
+                              placeholder="https://twitter.com/taptree-co"
                             />
 
                             <div>

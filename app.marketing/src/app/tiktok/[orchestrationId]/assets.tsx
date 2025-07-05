@@ -1,4 +1,4 @@
-import { cn } from '@trylinky/ui';
+import { cn } from '@taptree-co/ui';
 
 export const BrandLogo = ({ shouldAnimate }: { shouldAnimate?: boolean }) => {
   return (

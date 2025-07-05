@@ -2,7 +2,7 @@
 
 import { auth, useSession } from '@/app/lib/auth';
 import { CaretSortIcon, CheckIcon } from '@radix-ui/react-icons';
-import { Organization } from '@trylinky/prisma';
+import { Organization } from '@taptree-co/prisma';
 import {
   cn,
   Command,
@@ -18,7 +18,7 @@ import {
   Button,
   PopoverContent,
   PopoverTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useSWRConfig } from 'swr';

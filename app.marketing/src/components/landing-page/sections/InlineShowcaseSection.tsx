@@ -7,7 +7,7 @@ import iconTiktok from '@/assets/landing-page/integration-icons/icon-tiktok.png'
 import iconTwitch from '@/assets/landing-page/integration-icons/icon-twitch.png';
 import iconYoutube from '@/assets/landing-page/integration-icons/icon-youtube.png';
 import { MarketingContainer } from '@/components/marketing-container';
-import { cn } from '@trylinky/ui';
+import { cn } from '@taptree-co/ui';
 import Image from 'next/image';
 import React from 'react';
 

@@ -1,8 +1,8 @@
 import { BlockProps } from '../ui';
 import { HeaderServerUI } from './ui-server';
 import { CoreBlock } from '@/components/CoreBlock';
-import { HeaderBlockConfig } from '@trylinky/blocks';
-import { cn } from '@trylinky/ui';
+import { HeaderBlockConfig } from '@taptree-co/blocks';
+import { cn } from '@taptree-co/ui';
 import Image from 'next/image';
 import { FunctionComponent, Suspense } from 'react';
 

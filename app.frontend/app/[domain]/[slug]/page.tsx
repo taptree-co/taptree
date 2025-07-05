@@ -7,7 +7,7 @@ import {
 import { getSession } from '@/app/lib/auth';
 import { renderBlock } from '@/lib/blocks/ui';
 import { isUserAgentMobile } from '@/lib/user-agent';
-import { Block, Integration } from '@trylinky/prisma';
+import { Block, Integration } from '@taptree-co/prisma';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { headers } from 'next/headers';
 import { notFound, redirect } from 'next/navigation';

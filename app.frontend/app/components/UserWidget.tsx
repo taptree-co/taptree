@@ -4,8 +4,8 @@ import { ManageBillingDialog } from '@/app/components/ManageBillingDialog';
 import { auth, useSession } from '@/app/lib/auth';
 import { EditTeamSettingsDialog } from '@/components/EditTeamSettingsDialog/EditTeamSettingsDialog';
 import { NewPageDialog } from '@/components/NewPageDialog';
-import { internalApiFetcher } from '@trylinky/common';
-import { Organization } from '@trylinky/prisma';
+import { internalApiFetcher } from '@taptree-co/common';
+import { Organization } from '@taptree-co/prisma';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,7 +17,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';

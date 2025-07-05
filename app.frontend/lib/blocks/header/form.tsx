@@ -1,16 +1,16 @@
 import { EditFormProps } from '../types';
 import { FormField } from '@/app/components/FormField';
 import { FormFileUpload } from '@/components/FormFileUpload';
-import { HeaderBlockConfig, HeaderSchema } from '@trylinky/blocks';
-import { internalApiFetcher } from '@trylinky/common';
-import { Page } from '@trylinky/prisma';
+import { HeaderBlockConfig, HeaderSchema } from '@taptree-co/blocks';
+import { internalApiFetcher } from '@taptree-co/common';
+import { Page } from '@taptree-co/prisma';
 import {
   Button,
   Checkbox,
   Label,
   RadioGroup,
   RadioGroupItem,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { Loader2 } from 'lucide-react';
 import useSWR, { useSWRConfig } from 'swr';

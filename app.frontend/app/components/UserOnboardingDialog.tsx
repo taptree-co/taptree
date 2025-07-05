@@ -4,8 +4,8 @@ import { useSession } from '@/app/lib/auth';
 import { hideOnboardingTour } from '@/app/lib/auth-actions';
 import { useTour } from '@reactour/tour';
 import { captureException } from '@sentry/nextjs';
-import { internalApiFetcher } from '@trylinky/common';
-import { UserFlag } from '@trylinky/prisma';
+import { internalApiFetcher } from '@taptree-co/common';
+import { UserFlag } from '@taptree-co/prisma';
 import {
   Dialog,
   DialogContent,
@@ -15,7 +15,7 @@ import {
   DialogTitle,
   Button,
   useIsMobile,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useState } from 'react';
 import useSWR from 'swr';
 

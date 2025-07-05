@@ -5,8 +5,8 @@ import { useEditModeContext } from '@/app/contexts/Edit';
 import { CoreBlock } from '@/components/CoreBlock';
 import { enableDragDropTouch } from '@/lib/polyfills/drag-drop-touch.esm.min.js';
 import { captureException } from '@sentry/nextjs';
-import { InternalApi, internalApiFetcher } from '@trylinky/common';
-import { Skeleton, useToast, cn } from '@trylinky/ui';
+import { InternalApi, internalApiFetcher } from '@taptree-co/common';
+import { Skeleton, useToast, cn } from '@taptree-co/ui';
 import { useParams, useRouter } from 'next/navigation';
 import {
   ReactNode,

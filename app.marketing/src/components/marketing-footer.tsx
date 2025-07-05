@@ -63,17 +63,17 @@ const InstagramLogo = () => {
 const socialLinks = [
   {
     label: 'X / Twitter',
-    href: 'https://x.com/trylinky',
+    href: 'https://x.com/taptree-co',
     icon: XTwitterLogo,
   },
   {
     label: 'Github',
-    href: 'https://github.com/trylinky/linky',
+    href: 'https://github.com/taptree-co/linky',
     icon: GithubLogo,
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/trylinky',
+    href: 'https://www.instagram.com/taptree-co',
     icon: InstagramLogo,
   },
 ];

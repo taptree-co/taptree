@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss';
-import { cn } from '@trylinky/ui';
+import { cn } from '@taptree-co/ui';
 
 const SpotifyLogo = () => {
   return (
@@ -161,7 +161,7 @@ export const InstagramLatestPostMockup = ({
             <div className="absolute h-32 w-full bg-gradient-to-b from-transparent to-black bottom-0 z-10 px-6 py-6 flex flex-row justify-between items-end">
               <span className="flex flex-col">
                 <span className="text-white font-bold text-base">
-                  @trylinky
+                  @taptree-co
                 </span>
                 <span className="text-white/70 text-sm">
                   Posted about 2 days ago
@@ -267,17 +267,17 @@ export const LinkBoxMockup = ({
     x: {
       icon: 'https://cdn.lin.ky/default-data/x-logo.png',
       title: 'X / Twitter',
-      username: '@trylinky',
+      username: '@taptree-co',
     },
     instagram: {
       icon: 'https://cdn.lin.ky/default-data/icons/instagram.svg',
       title: 'Instagram',
-      username: '@trylinky',
+      username: '@taptree-co',
     },
     linkedin: {
       icon: 'https://cdn.lin.ky/default-data/icons/linkedin.svg',
       title: 'LinkedIn',
-      username: '@trylinky',
+      username: '@taptree-co',
     },
   };
   return (

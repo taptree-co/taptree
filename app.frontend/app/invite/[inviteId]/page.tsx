@@ -1,7 +1,7 @@
 import { LoggedInAcceptInviteUI, LoggedOutAcceptInviteUI } from './accept-ui';
 import { auth } from '@/app/lib/auth';
 import prisma from '@/lib/prisma';
-import { Avatar, AvatarFallback, AvatarImage } from '@trylinky/ui';
+import { Avatar, AvatarFallback, AvatarImage } from '@taptree-co/ui';
 import { headers } from 'next/headers';
 
 const getInvite = async (inviteId: string) => {

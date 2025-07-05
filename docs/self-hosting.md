@@ -19,7 +19,7 @@ Before you begin, make sure you have the following installed:
 ## Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/trylinky/linky.git
+git clone https://github.com/taptree-co/linky.git
 cd linky
 ```
 
@@ -101,13 +101,13 @@ Linky uses [Turbo](https://turbo.build/) to run the frontend and backend applica
 Frontend:
 
 ```bash
-turbo run build:frontend --filter=@trylinky/frontend
+turbo run build:frontend --filter=@taptree-co/frontend
 ```
 
 API:
 
 ```bash
-turbo run prisma:migrate prisma:generate --filter=@trylinky/prisma && turbo run build:api --filter=@trylinky/api
+turbo run prisma:migrate prisma:generate --filter=@taptree-co/prisma && turbo run build:api --filter=@taptree-co/api
 ```
 
 ## Security Considerations

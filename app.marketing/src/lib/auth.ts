@@ -1,4 +1,4 @@
-import { auth } from '@trylinky/common';
+import { auth } from '@taptree-co/common';
 
 export const { signIn, signOut, useSession, getSession } = auth;
 

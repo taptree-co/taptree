@@ -1,7 +1,7 @@
 import { CallToActionBlock } from '@/components/landing-page/CallToActionBlock';
 import { FrequentlyAskedQuestions } from '@/components/landing-page/Faq';
 import { MarketingContainer } from '@/components/marketing-container';
-import { PricingTable, auth } from '@trylinky/common';
+import { PricingTable, auth } from '@taptree-co/common';
 import { Metadata } from 'next';
 import { headers } from 'next/headers';
 import Image from 'next/image';

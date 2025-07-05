@@ -1,5 +1,5 @@
 {
-  "name": "@trylinky/api",
+  "name": "@taptree-co/api",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -23,9 +23,9 @@
     "@sinclair/typebox": "^0.34.30",
     "@sindresorhus/slugify": "^2.2.1",
     "@slack/web-api": "^7.8.0",
-    "@trylinky/blocks": "*",
-    "@trylinky/notifications": "*",
-    "@trylinky/prisma": "*",
+    "@taptree-co/blocks": "*",
+    "@taptree-co/notifications": "*",
+    "@taptree-co/prisma": "*",
     "better-auth": "^1.2.4",
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
@@ -51,6 +51,6 @@
     "dev": "dotenvx run -f ../.env.local -- tsx watch src",
     "start:api": "node dist/index.js",
     "build:api": "node build.js",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org linky-fm --project glow-api ./dist && sentry-cli sourcemaps upload ./dist --org linky-fm --project glow-api"
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org taptree-fm --project glow-api ./dist && sentry-cli sourcemaps upload ./dist --org taptree-fm --project glow-api"
   }
 }

@@ -1,4 +1,4 @@
-import uiConfig from '@trylinky/ui/tailwind.config';
+import uiConfig from '@taptree-co/ui/tailwind.config';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {

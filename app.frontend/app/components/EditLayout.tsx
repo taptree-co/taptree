@@ -1,5 +1,5 @@
 import { EditSidebar } from '@/app/components/EditSidebar';
-import { SidebarInset, SidebarTrigger } from '@trylinky/ui';
+import { SidebarInset, SidebarTrigger } from '@taptree-co/ui';
 import { ReactNode } from 'react';
 
 export function EditLayout({ children }: { children: ReactNode }) {

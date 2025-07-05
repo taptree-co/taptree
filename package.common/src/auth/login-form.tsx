@@ -2,7 +2,7 @@
 
 import { auth } from '../auth/auth';
 import { LoginProviderButton } from './login-provider-button';
-import { Button, Input, toast } from '@trylinky/ui';
+import { Button, Input, toast } from '@taptree-co/ui';
 import { useState } from 'react';
 
 interface Props {

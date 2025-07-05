@@ -10,7 +10,7 @@ import {
   TrialFinishedEmail,
   TrialFinishedEmailText,
   WelcomeEmail,
-} from '@trylinky/notifications';
+} from '@taptree-co/notifications';
 import React from 'react';
 
 export async function sendEmail({

@@ -2,7 +2,7 @@
 
 import { getSession } from '@/app/lib/auth';
 import prisma from '@/lib/prisma';
-import { VerificationRequestStatus } from '@trylinky/prisma';
+import { VerificationRequestStatus } from '@taptree-co/prisma';
 import { headers } from 'next/headers';
 
 export async function createVerificationRequest({

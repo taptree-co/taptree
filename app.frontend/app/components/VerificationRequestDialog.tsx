@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
   toast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { Form, Formik } from 'formik';
 import { withZodSchema } from 'formik-validator-zod';
 import { z } from 'zod';

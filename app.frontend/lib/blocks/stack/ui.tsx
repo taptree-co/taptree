@@ -2,8 +2,8 @@
 
 import { BlockProps } from '../ui';
 import { CoreBlock } from '@/components/CoreBlock';
-import { StackBlockConfig } from '@trylinky/blocks';
-import { internalApiFetcher } from '@trylinky/common';
+import { StackBlockConfig } from '@taptree-co/blocks';
+import { internalApiFetcher } from '@taptree-co/common';
 import { FunctionComponent } from 'react';
 import useSWR from 'swr';
 

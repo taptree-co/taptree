@@ -1,7 +1,7 @@
 import { BlockProps } from '../ui';
 import { SpotifyLogo, SpotifyPlayingNowServerUI } from './ui-server';
 import { CoreBlock } from '@/components/CoreBlock';
-import { Skeleton } from '@trylinky/ui';
+import { Skeleton } from '@taptree-co/ui';
 import { FunctionComponent, Suspense } from 'react';
 
 export const SpotifyPlayingNow: FunctionComponent<BlockProps> = ({

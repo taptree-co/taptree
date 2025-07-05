@@ -1,6 +1,6 @@
 'use client';
 
-import { auth } from '@trylinky/common';
+import { auth } from '@taptree-co/common';
 import {
   Dialog,
   DialogContent,
@@ -9,7 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
   Button,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 

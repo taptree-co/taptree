@@ -3,8 +3,8 @@
 import { auth } from '@/app/lib/auth';
 import { EditTeamSettingsGeneral } from '@/components/EditTeamSettingsDialog/EditTeamSettingsGeneralForm';
 import { EditTeamSettingsMembers } from '@/components/EditTeamSettingsDialog/EditTeamSettingsMembersForm';
-import { internalApiFetcher } from '@trylinky/common';
-import { Invitation, Organization, User } from '@trylinky/prisma';
+import { internalApiFetcher } from '@taptree-co/common';
+import { Invitation, Organization, User } from '@taptree-co/prisma';
 import {
   Dialog,
   DialogContent,
@@ -15,7 +15,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 

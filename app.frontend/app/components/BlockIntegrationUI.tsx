@@ -3,8 +3,8 @@ import { SpotifyLogo } from '@/app/components/integration-icons/spotify';
 import { ThreadsLogo } from '@/app/components/integration-icons/threads';
 import { TikTokLogo } from '@/app/components/integration-icons/tiktok';
 import { captureException } from '@sentry/nextjs';
-import { InternalApi, internalApiFetcher } from '@trylinky/common';
-import { Integration } from '@trylinky/prisma';
+import { InternalApi, internalApiFetcher } from '@taptree-co/common';
+import { Integration } from '@taptree-co/prisma';
 import {
   Select,
   SelectContent,
@@ -13,7 +13,7 @@ import {
   SelectValue,
   Button,
   toast,
-} from '@trylinky/ui';
+} from '@taptree-co/ui';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';

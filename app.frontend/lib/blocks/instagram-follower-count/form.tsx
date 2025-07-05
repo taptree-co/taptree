@@ -1,8 +1,8 @@
 import { EditFormProps } from '../types';
 import { captureException } from '@sentry/nextjs';
-import { InstagramFollowerCountBlockConfig } from '@trylinky/blocks';
-import { InternalApi } from '@trylinky/common';
-import { Button, toast } from '@trylinky/ui';
+import { InstagramFollowerCountBlockConfig } from '@taptree-co/blocks';
+import { InternalApi } from '@taptree-co/common';
+import { Button, toast } from '@taptree-co/ui';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';

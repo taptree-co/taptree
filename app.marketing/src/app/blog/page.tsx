@@ -1,7 +1,7 @@
 import { MarketingContainer } from '@/components/marketing-container';
 import { authors } from '@/lib/cms/authors';
 import { getBlogPosts } from '@/lib/cms/get-blog-posts';
-import { Button } from '@trylinky/ui';
+import { Button } from '@taptree-co/ui';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';

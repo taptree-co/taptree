@@ -1,6 +1,6 @@
 'use client';
 
-import { Blocks } from '@trylinky/blocks';
+import { Blocks } from '@taptree-co/blocks';
 import {
   ReactNode,
   createContext,
