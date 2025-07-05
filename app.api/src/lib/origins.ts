@@ -1,12 +1,12 @@
 export const trustedOrigins =
   process.env.NODE_ENV === 'production'
     ? [
-        'https://lin.ky',
-        'https://www.lin.ky',
-        'https://admin.lin.ky',
-        'https://glow.as',
-        'https://www.glow.as',
-        'https://admin.glow.as',
+        'https://taptree-app-frontend.vercel.app',
+        //'https://www.lin.ky',
+        //'https://admin.lin.ky',
+        //'https://glow.as',
+        //'https://www.glow.as',
+        //'https://admin.glow.as',
       ]
     : [
         'http://localhost:3000',
