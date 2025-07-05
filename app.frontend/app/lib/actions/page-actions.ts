@@ -22,8 +22,10 @@ export async function getPageIdBySlugOrDomain(slug: string, domain: string) {
 
   if (!res.ok) {
     const errorText = await res.text();
-    console.error(`getPageIdBySlugOrDomain failed: ${res.status}\n${errorText}`);
-    return null;
+    throw new Error(
+      `getPageIdBySlugOrDomain failed: ${res.status}\n${errorText}`
+    );
+    //return null;
   }
 
   return res.json();
