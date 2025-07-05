@@ -47,7 +47,7 @@ export const auth = betterAuth({
       process.env.NODE_ENV === 'production'
         ? {
             enabled: true,
-            domain: '.lin.ky',
+            domain: 'taptree-api.onrender.com',
           }
         : {
             enabled: false,
