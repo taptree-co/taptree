@@ -109,8 +109,7 @@ services:
 
     region: frankfurt
     buildCommand:
-      npm install && turbo run prisma:migrate prisma:generate --filter=@taptree-co/prisma && turbo run build:api
-      --filter=@taptree-co/api
+      npm install && turbo run prisma:migrate prisma:generate --filter=@taptree-co/prisma && turbo run build:api --filter=@taptree-co/api
     startCommand: turbo run start:api
     domains:
       - api.lin.ky
