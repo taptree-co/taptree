@@ -66,19 +66,19 @@ await fastify.register(cors, {
 });
 
 fastify.register(coreRoutes);
-//fastify.register(marketingRoutes, { prefix: '/marketing' });
-//fastify.register(blocksRoutes, { prefix: '/blocks' });
-//fastify.register(pagesRoutes, { prefix: '/pages' });
-//fastify.register(themesRoutes, { prefix: '/themes' });
+fastify.register(marketingRoutes, { prefix: '/marketing' });
+fastify.register(blocksRoutes, { prefix: '/blocks' });
+fastify.register(pagesRoutes, { prefix: '/pages' });
+fastify.register(themesRoutes, { prefix: '/themes' });
 
-//fastify.register(integrationsRoutes, { prefix: '/integrations' });
-//fastify.register(reactionsRoutes, { prefix: '/reactions' });
-//fastify.register(assetsRoutes, { prefix: '/assets' });
-//fastify.register(orchestratorsRoutes, { prefix: '/orchestrators' });
-//fastify.register(analyticsRoutes, { prefix: '/analytics' });
-//fastify.register(flagsRoutes, { prefix: '/flags' });
-//fastify.register(organizationsRoutes, { prefix: '/organizations' });
-//fastify.register(billingRoutes, { prefix: '/billing' });
+fastify.register(integrationsRoutes, { prefix: '/integrations' });
+fastify.register(reactionsRoutes, { prefix: '/reactions' });
+fastify.register(assetsRoutes, { prefix: '/assets' });
+fastify.register(orchestratorsRoutes, { prefix: '/orchestrators' });
+fastify.register(analyticsRoutes, { prefix: '/analytics' });
+fastify.register(flagsRoutes, { prefix: '/flags' });
+fastify.register(organizationsRoutes, { prefix: '/organizations' });
+fastify.register(billingRoutes, { prefix: '/billing' });
 
 //fastify.register(tiktokServiceRoutes, { prefix: '/services/tiktok' });
 //fastify.register(instagramServiceRoutes, { prefix: '/services/instagram' });
