@@ -73,7 +73,7 @@ fastify.register(themesRoutes, { prefix: '/themes' });
 
 fastify.register(integrationsRoutes, { prefix: '/integrations' });
 fastify.register(reactionsRoutes, { prefix: '/reactions' });
-fastify.register(assetsRoutes, { prefix: '/assets' });
+//fastify.register(assetsRoutes, { prefix: '/assets' });
 fastify.register(orchestratorsRoutes, { prefix: '/orchestrators' });
 fastify.register(analyticsRoutes, { prefix: '/analytics' });
 fastify.register(flagsRoutes, { prefix: '/flags' });
