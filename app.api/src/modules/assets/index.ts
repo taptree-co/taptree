@@ -1,7 +1,8 @@
+/*
 'use strict';
 
 import { assetContexts } from '@/modules/assets/constants';
-import { uploadAsset } from '@/modules/assets/service';
+//import { uploadAsset } from '@/modules/assets/service';
 import { isObjKey } from '@/modules/assets/utils';
 import { MultipartFile, MultipartValue } from '@fastify/multipart';
 import { FastifyInstance, FastifyReply } from 'fastify';
@@ -94,3 +95,4 @@ async function postUploadAssetHandler(
     url: uploadResult.data.url,
   });
 }
+*/

@@ -1,3 +1,4 @@
+/*
 import { assetContexts, AssetContexts } from '@/modules/assets/constants';
 import {
   CompleteMultipartUploadCommandOutput,
@@ -7,7 +8,7 @@ import {
 import { Upload } from '@aws-sdk/lib-storage';
 import { MultipartFile } from '@fastify/multipart';
 import { randomUUID } from 'crypto';
-import sharp from 'sharp';
+//import sharp from 'sharp';
 import { PassThrough } from 'stream';
 
 function isComplete(
@@ -127,4 +128,4 @@ export async function uploadAsset({
       error: 'Failed to upload asset',
     };
   }
-}
+}*/

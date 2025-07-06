@@ -9,7 +9,7 @@ import tiktokServiceRoutes from './modules/services/tiktok';
 import { authenticateDecorator } from '@/decorators/authenticate';
 import { trustedOrigins } from '@/lib/origins';
 import analyticsRoutes from '@/modules/analytics';
-import assetsRoutes from '@/modules/assets';
+//import assetsRoutes from '@/modules/assets';
 import billingRoutes from '@/modules/billing';
 import flagsRoutes from '@/modules/flags';
 import integrationsRoutes from '@/modules/integrations';
