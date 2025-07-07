@@ -42,21 +42,15 @@ export const auth = betterAuth({
     },
   },
   advanced: {
-    generateId: false, // Let the database generate UUIDs
-    crossSubDomainCookies:
-      process.env.NODE_ENV === 'production'
-        ? {
-            enabled: true,
-            domain: 'taptree-api.onrender.com',
-          }
-        : {
-            enabled: false,
-          },
+    generateId: false,
+    crossSubDomainCookies: {
+      enabled: false, // Disable since you're using different domains
+    },
     defaultCookieAttributes: {
-      secure: true,
+      secure: process.env.NODE_ENV === 'production',
       httpOnly: true,
-      sameSite: 'none', // Allows CORS-based cookie sharing across subdomains
-      partitioned: true, // New browser standards will mandate this for foreign cookies
+      sameSite: 'none', // Correct for cross-origin
+      // Remove partitioned - it can cause issues with cross-origin
     },
   },
   session: {
