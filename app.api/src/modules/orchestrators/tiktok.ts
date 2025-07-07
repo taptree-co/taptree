@@ -1,6 +1,6 @@
 import { encrypt } from '@/lib/encrypt';
 import prisma from '@/lib/prisma';
-import { uploadAsset } from '@/modules/assets/service';
+//import { uploadAsset } from '@/modules/assets/service';
 import { captureException, captureMessage } from '@sentry/node';
 import safeAwait from 'safe-await';
 

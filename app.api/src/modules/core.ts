@@ -17,16 +17,29 @@ export async function coreRoutes(fastify: FastifyInstance) {
     },
   });
 
-  fastify.get('/session/me', {
-    handler: async (req: FastifyRequest, res: FastifyReply) => {
-      req.log.info({ url: req.url, method: req.method }, '→ /session/me hit')
+  // In core.ts
+fastify.get('/session/me', {
+  handler: async (req: FastifyRequest, res: FastifyReply) => {
+    try {
       const session = await req.server.authenticate(req, res);
-
-      req.log.info({ userId: session?.user.id }, '↳ session loaded')
+      
+      if (!session) {
+        return res.status(401).send({
+          error: 'Unauthorized',
+          session: null
+        });
+      }
       
       return res.status(200).send({
         session,
       });
-    },
-  });
+    } catch (error) {
+      console.error('Session authentication error:', error);
+      return res.status(401).send({
+        error: 'Unauthorized',
+        session: null
+      });
+    }
+  },
+});
 }

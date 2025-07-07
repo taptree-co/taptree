@@ -52,13 +52,18 @@ await fastify.register(fastifyMultipart, {
 });
 
 await fastify.register(cors, {
-  origin: true,
+  origin: [
+    'https://taptree-app-frontend.vercel.app',
+    'http://localhost:3000', // for development
+    /\.vercel\.app$/ // Allow all vercel preview deployments
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: [
     'Content-Type', 
     'Authorization', 
     'x-api-key',
-    'Cookie' // this will allow browser to send cookies
+    'Cookie',
+    'Set-Cookie'
   ],
   exposedHeaders: ['Content-Length'], // Expose specific headers
   credentials: true,
