@@ -1,5 +1,5 @@
 import { EditFormProps } from '../types';
-import { BlockIntegrationUI } from '@/app/components/BlockIntegrationUI';
+//import { BlockIntegrationUI } from '@/app/components/BlockIntegrationUI';
 import { FormField } from '@/components/FormField';
 import {
   InstagramLatestPostBlockConfig,
@@ -26,12 +26,13 @@ export function EditForm({
 
   return (
     <>
+    {/*
       <BlockIntegrationUI
         blockId={blockId}
         integration={integration}
         integrationType="instagram"
       />
-
+*/}
       {!integration && (
         <div className="bg-stone-100 rounded-md flex flex-col items-center text-center px-4 py-8 mt-4">
           <span className="text-sm text-stone-600 text-pretty">
