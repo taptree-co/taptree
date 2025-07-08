@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "better-auth": "1.2.4",
+    "better-auth": "^1.2.12",
     "swr": "^2.3.3",
     "typescript": "^5",
     "yup": "^1.4.0"
