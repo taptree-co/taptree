@@ -1,4 +1,4 @@
-//import { withSentryConfig } from '@sentry/nextjs';
+import { withSentryConfig } from '@sentry/nextjs';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -70,14 +70,14 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+//export default nextConfig;
 
-/*
+
 export default withSentryConfig(nextConfig, {
-  org: 'linky-fm',
-  project: 'glow',
+  org: 'taptree',
+  project: 'api',
   silent: false,
   sourcemaps: {
     deleteSourcemapsAfterUpload: true,
   },
-});*/
+});

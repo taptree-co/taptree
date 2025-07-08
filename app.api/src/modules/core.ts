@@ -1,4 +1,6 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
+import {captureMessage} from '@sentry/node';
+
 
 export async function coreRoutes(fastify: FastifyInstance) {
   fastify.get('/', {
@@ -42,4 +44,12 @@ fastify.get('/session/me', {
     }
   },
 });
+
+fastify.addHook('onResponse', async (req, reply) => {
+  if (reply.statusCode === 401) {
+    captureMessage(`401 on ${req.method} ${req.url}`, 'warning')
+  }
+})
+
 }
+
