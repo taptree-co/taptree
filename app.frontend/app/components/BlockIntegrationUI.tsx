@@ -1,4 +1,3 @@
-/*
 import { InstagramLogo } from '@/app/components/integration-icons/Instagram';
 import { SpotifyLogo } from '@/app/components/integration-icons/spotify';
 import { ThreadsLogo } from '@/app/components/integration-icons/threads';
@@ -246,4 +245,3 @@ export function BlockIntegrationUI({
     </>
   );
 }
-*/
