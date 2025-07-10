@@ -14,6 +14,11 @@
     "package.tinybird",
     "package.ui"
   ],
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "next": "15.3.5"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
