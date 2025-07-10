@@ -1,7 +1,7 @@
-import {
-  integrationUIConfig,
-  SupportedIntegrations,
-} from '@/app/components/BlockIntegrationUI';
+//import {
+  //integrationUIConfig,
+  //SupportedIntegrations,
+//} from '@/app/components/BlockIntegrationUI';
 import { captureException } from '@sentry/nextjs';
 import { InternalApi, internalApiFetcher } from '@taptree-co/common';
 import { Integration } from '@taptree-co/prisma';
@@ -80,13 +80,14 @@ export function SidebarIntegrations() {
             </div>
           ) : currentTeamIntegrations?.length ? (
             <div className="flex flex-col gap-2 divide-y divide-stone-200">
-              {currentTeamIntegrations?.map((integration) => {
-                const integrationConfig =
-                  integrationUIConfig[
-                    integration.type as SupportedIntegrations
-                  ];
 
-                const IntegrationIcon = integrationConfig.icon;
+              {currentTeamIntegrations?.map((integration) => {
+                const integrationConfig = []
+                  //integrationUIConfig[
+                    //integration.type as SupportedIntegrations
+                  //];
+
+                //const IntegrationIcon = integrationConfig.icon;
 
                 return (
                   <div
@@ -95,11 +96,11 @@ export function SidebarIntegrations() {
                   >
                     <div className="flex items-center gap-2">
                       <div className="bg-stone-200 rounded-md w-8 h-8 flex items-center justify-center">
-                        <IntegrationIcon width={18} height={18} />
+                        {/* <IntegrationIcon width={18} height={18} /> */}
                       </div>
                       <div className="flex flex-col">
                         <span className="text-sm font-medium">
-                          {integrationConfig.name}
+                          {/*integrationConfig.name*/}
                         </span>
                         <span className="text-muted-foreground text-xs">
                           {integration.displayName}
