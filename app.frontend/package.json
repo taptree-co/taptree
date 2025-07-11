@@ -55,7 +55,8 @@
     "swr": "^2.2.5",
     "uuid": "^11.0.2",
     "yup": "^1.4.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "@radix-ui/react-select": "^2.2.5"
   },
   "devDependencies": {
     "@types/mapbox-gl": "^3.4.1",
