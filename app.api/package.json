@@ -52,5 +52,8 @@
     "start:api": "node dist/index.js",
     "build:api": "node build.js && npm run sentry:sourcemaps",
     "sentry:sourcemaps": "sentry-cli sourcemaps inject --org taptree --project api ./dist && sentry-cli sourcemaps upload ./dist --org taptree --project api"
+  },
+  "optionalDependencies": {
+    "node-fetch": "^2.7.0"
   }
 }
