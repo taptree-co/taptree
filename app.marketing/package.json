@@ -20,6 +20,7 @@
     "@taptree-co/ui": "*",
     "@vercel/analytics": "^1.5.0",
     "better-auth": "^1.2.4",
+    "graphql": "^16.11.0",
     "graphql-request": "^7.1.2",
     "next": "15.2",
     "react": "^19.0.0",
