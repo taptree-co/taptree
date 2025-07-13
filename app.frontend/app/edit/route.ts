@@ -2,6 +2,7 @@ import { getSession } from '@/app/lib/auth';
 import prisma from '@/lib/prisma';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
+import * as Sentry from '@sentry/nextjs';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -15,6 +16,7 @@ export async function GET(request: Request) {
   const { user, session: sessionData } = session?.data ?? {};
 
   if (!user || !sessionData?.activeOrganizationId) {
+    Sentry.captureMessage('Unauthorized access at /edit', 'warning');
     return redirect('/');
   }
 
