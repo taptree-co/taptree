@@ -7,8 +7,10 @@ import {
 } from 'posthog-js/react';
 import { useEffect } from 'react';
 
-if (typeof window !== 'undefined') {
-  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
+const PH_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+
+if (typeof window !== 'undefined' && PH_KEY) {
+  posthog.init(PH_KEY, {
     api_host: 'https://eu.i.posthog.com',
     person_profiles: 'identified_only',
   });
