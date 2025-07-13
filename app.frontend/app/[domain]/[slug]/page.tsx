@@ -11,6 +11,7 @@ import { Block, Integration } from '@taptree-co/prisma';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { headers } from 'next/headers';
 import { notFound, redirect } from 'next/navigation';
+import { normalizeDomain } from '@/lib/getBaseDomain';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -81,10 +82,12 @@ export default async function Page(props: { params: Promise<Params> }) {
   const { user } = session?.data ?? {};
 
   const isLoggedIn = !!user;
-
   // Track core page fetch time
   const corePageStartTime = performance.now();
-  const corePage = await getPageIdBySlugOrDomain(params.slug, params.domain);
+
+   const normalizedDomain = normalizeDomain(params.domain);
+  const corePage = await getPageIdBySlugOrDomain(params.slug, normalizedDomain);
+
   const corePageTime = performance.now() - corePageStartTime;
 
   if (!corePage) {
